@@ -14,7 +14,6 @@ get '/welcome' do
 end
 
 get '/cat' do
-  "<div style='border: 5px dashed red'>
-    <img src='http://bit.ly/1eze8aE'>
-  </div>"
+  @name = ["Amigo", "Oscar", "Viking"].sample
+  erb(:index)
 end
